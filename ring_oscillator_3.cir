@@ -1,0 +1,18 @@
+.subckt ro_3 enable out vdd vss
+X1 enable in feedback vdd vss nand tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X2 feedback n2 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X3 n2 n3 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X4 n3 n4 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X5 n4 n5 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X6 n5 n6 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X7 n6 n7 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X8 n7 n8 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X9 n8 n9 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X10 n9 n10 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X11 n10 n11 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X12 n11 n12 vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+X13 n12 out vdd vss inverter tplv=-3.6915e-09 tpwv=-8.6632e-09 tnlv=1.0223e-09 tnwv=6.3075e-09 tpotv=5.7251e-11 tnotv=-2.1774e-10
+* Feedback connection
+* 1 ohm resistor for feedback
+Rfeedback out in 1
+.ends ro_3
