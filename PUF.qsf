@@ -1,0 +1,263 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 14:13:09  October 01, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		PUF_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C6GES
+set_global_assignment -name TOP_LEVEL_ENTITY toplevel
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:13:09  OCTOBER 01, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_FILE Ring_Oscillator.vhd
+set_global_assignment -name VHDL_FILE RO_PUF.vhd
+set_global_assignment -name VHDL_FILE toplevel.vhd
+set_global_assignment -name VHDL_FILE toplevel_tb.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE toplevel.sdc
+set_location_assignment PIN_P11 -to clock
+set_global_assignment -name BOARD "MAX 10 DE10 - Lite"
+set_location_assignment PIN_C10 -to reset
+set_location_assignment PIN_A8 -to done
+
+set_global_assignment -name VHDL_FILE inverter.vhd
+set_location_assignment X1_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X0_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X2_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X3_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X4_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X0_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X1_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X2_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X3_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X4_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X0_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X1_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:0:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X10_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X11_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X12_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X13_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X14_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X10_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X11_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X12_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X13_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X14_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X10_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X11_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:1:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X20_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X21_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X22_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X23_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X24_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X20_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X21_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X22_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X23_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X24_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X20_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X21_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:2:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X30_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X31_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X32_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X33_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X34_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X30_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X31_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X32_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X33_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X34_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X30_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X31_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:3:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X40_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X41_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X42_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X43_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X44_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X40_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X41_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X42_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X43_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X44_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X40_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X41_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:4:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X50_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X51_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X52_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X53_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X54_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X50_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X51_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X52_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X53_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X54_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X50_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X51_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:5:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X60_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X61_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X62_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X63_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X64_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X60_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X61_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X62_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X63_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X64_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X60_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X61_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:6:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X70_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X71_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X72_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X73_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X74_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X70_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X71_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X72_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X73_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X74_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X70_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X71_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:7:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X80_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X81_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X82_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X83_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X84_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X80_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X81_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X82_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X83_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X84_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X80_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X81_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:8:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X90_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X91_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X92_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X93_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X94_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X90_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X91_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X92_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X93_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X94_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X90_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X91_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:9:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X100_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X101_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X102_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X103_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X104_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X100_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X101_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X102_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X103_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X104_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X100_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X101_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:10:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X110_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X111_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X112_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X113_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X114_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X110_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X111_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X112_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X113_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X114_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X110_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X111_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:11:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X120_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X121_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X122_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X123_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X124_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X120_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X121_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X122_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X123_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X124_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X120_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X121_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:12:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X130_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X131_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X132_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X133_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X134_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X130_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X131_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X132_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X133_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X134_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X130_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X131_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:13:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X140_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X141_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X142_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X143_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X144_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X140_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X141_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X142_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X143_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X144_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X140_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X141_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:14:ro|inverter:\\gen_inverters:11:inv|output"
+set_location_assignment X150_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:0:inv|output"
+set_location_assignment X151_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:1:inv|output"
+set_location_assignment X152_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:2:inv|output"
+set_location_assignment X153_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:3:inv|output"
+set_location_assignment X154_Y0 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:4:inv|output"
+set_location_assignment X150_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:5:inv|output"
+set_location_assignment X151_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:6:inv|output"
+set_location_assignment X152_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:7:inv|output"
+set_location_assignment X153_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:8:inv|output"
+set_location_assignment X154_Y1 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:9:inv|output"
+set_location_assignment X150_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:10:inv|output"
+set_location_assignment X151_Y2 -to "ro_puf:puf|ring_oscillator:\\gen_ro:15:ro|inverter:\\gen_inverters:11:inv|output"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
