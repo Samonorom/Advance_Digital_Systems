@@ -1,0 +1,84 @@
+#------------------------------------------------------------------------------
+# SDC constraints for MAX10 temperature measurement project
+#------------------------------------------------------------------------------
+
+# First, let's derive all the clocks in our system
+
+#------------------------------------------------------------------------------
+# Primary Clock - 50 MHz from board
+#------------------------------------------------------------------------------
+create_clock -name MAX10_CLK1_50 -period 20.000 [get_ports MAX10_CLK1_50]
+
+# Specify clock uncertainty for all clocks
+# This accounts for jitter and other timing variations
+derive_clock_uncertainty
+
+#------------------------------------------------------------------------------
+# Virtual Primary Clock
+# Used as reference for PLL generated clocks
+#------------------------------------------------------------------------------
+create_clock -name VIRTUAL_50MHZ -period 20.000
+
+#------------------------------------------------------------------------------
+# PLL Generated Clock - 10 MHz for ADC
+#------------------------------------------------------------------------------
+# The multiply/divide values should match your PLL configuration
+create_generated_clock -name pll_clk_10mhz \
+    -source [get_pins {pll_inst|altpll_component|auto_generated|pll1|inclk[0]}] \
+    -divide_by 5 \
+    -multiply_by 1 \
+    [get_pins {pll_inst|altpll_component|auto_generated|pll1|clk[0]}]
+
+#------------------------------------------------------------------------------
+# ADC Generated Clock - Divided from 10 MHz
+#------------------------------------------------------------------------------
+# The exact division ratio depends on ADC configuration
+create_generated_clock -name adc_clk \
+    -source [get_pins {pll_inst|altpll_component|auto_generated|pll1|clk[0]}] \
+    -divide_by 10 \
+    [get_pins {adc_inst|clk_dft}]
+
+#------------------------------------------------------------------------------
+# Clock Groups
+# Define asynchronous clock domains
+#------------------------------------------------------------------------------
+set_clock_groups -asynchronous \
+    -group {MAX10_CLK1_50} \
+    -group {pll_clk_10mhz adc_clk}
+
+#------------------------------------------------------------------------------
+# Clock Domain Crossing Constraints
+#------------------------------------------------------------------------------
+# Set false paths for gray-coded pointers crossing clock domains
+set_false_path -from [get_registers {fifo_synchronizer:fifo_sync|wr_ptr_gray[*]}] \
+               -to   [get_registers {fifo_synchronizer:fifo_sync|wr_ptr_gray_sync[*]}]
+
+set_false_path -from [get_registers {fifo_synchronizer:fifo_sync|rd_ptr_gray[*]}] \
+               -to   [get_registers {fifo_synchronizer:fifo_sync|rd_ptr_gray_sync[*]}]
+
+# Set multicycle paths for FIFO data crossing clock domains
+# Data is held stable while synchronization occurs
+set_multicycle_path -setup 3 -from [get_registers {fifo_synchronizer:fifo_sync|memory[*]}] \
+                            -to   [get_registers {display_controller:display_ctrl|temp_value[*]}]
+set_multicycle_path -hold 2  -from [get_registers {fifo_synchronizer:fifo_sync|memory[*]}] \
+                            -to   [get_registers {display_controller:display_ctrl|temp_value[*]}]
+
+#------------------------------------------------------------------------------
+# I/O Constraints
+#------------------------------------------------------------------------------
+# Input delays for asynchronous reset (KEY0)
+set_input_delay -clock MAX10_CLK1_50 -max 3 [get_ports KEY0]
+set_input_delay -clock MAX10_CLK1_50 -min 1 [get_ports KEY0]
+
+# Output delays for seven-segment displays
+set_output_delay -clock MAX10_CLK1_50 -max 2 [get_ports HEX*]
+set_output_delay -clock MAX10_CLK1_50 -min 0 [get_ports HEX*]
+
+#------------------------------------------------------------------------------
+# Exception Paths
+#------------------------------------------------------------------------------
+# Reset synchronization chains
+set_false_path -from [get_ports KEY0] -to [get_registers *reset_synchronizer:*|sync_reg[0]]
+
+# Clock crossing control signals through synchronizers
+set_false_path -from [get_registers *] -to [get_registers *two_stage_synchronizer:*|stage1*]
