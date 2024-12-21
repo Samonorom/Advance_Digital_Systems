@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1734735625" />
+    <testcase name="testbench" classname="tb_toplevel_wrapper" file="/mnt/c/users/samon/desktop/project4/tb_toplevel_wrapper.py" lineno="139" time="205.4195601940155" sim_time_ns="5140.001" ratio_time="25.021964778550547" />
+  </testsuite>
+</testsuites>

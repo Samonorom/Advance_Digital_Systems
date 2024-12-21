@@ -1,0 +1,1005 @@
+couldn't open "transcript": permission denied
+# Reading pref.tcl
+# reading modelsim.ini
+# Loading project Project4
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(141): Function call prefix of indexed name does not return an array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(141): (vcom-1348) Prefix (function call "lamps_negative") of indexed name is not an array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(88): Subprogram "lamps_off" parameter "lamp_mode_common_anode" default expression does not conform between subprogram declaration and subprogram body.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(116): Function "lamps_off" declared at line 51 has no body.
+# 
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(116): VHDL Compiler exiting
+# 
+# 
+# 2 compiles, 2 failed with 9 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(141): Function call prefix of indexed name does not return an array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(141): (vcom-1348) Prefix (function call "lamps_negative") of indexed name is not an array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 9 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 7 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 7 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 7 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(147): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 7 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 6 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(82): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(66)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(84): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(96): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(102): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 5 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(161): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(205): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(83): (vcom-1604) No feasible entries for subprogram "invert_segments" with expected return type "work.seven_segment_pkg.seven_segment_digit_array".
+#    Visible subprograms are:
+#       (explicit) seven_segment_pkg.invert_segments[work.seven_segment_pkg.seven_segment_config return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(67)
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(85): Cannot resolve indexed name (type work.seven_segment_pkg.seven_segment_config) as type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(97): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(103): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 2 failed with 5 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(97): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(103): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 1 failed with 2 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(97): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(103): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 1 failed with 2 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(97): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(103): near "loop": (vcom-1576) expecting ';'.
+# 
+# 
+# 2 compiles, 1 failed with 2 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(97): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(43): (vcom-1136) Unknown identifier "leading_zeros".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(155): (vcom-1590) Bad expression in left operand of infix expression 'and'.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(156): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(206): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 3 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(122): near "else": (vcom-1576) expecting END.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(122): near "else": (vcom-1576) expecting END.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(122): near "else": (vcom-1576) expecting END.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(122): near "else": (vcom-1576) expecting END.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(151): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(209): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(81): near "in": (vcom-1576) expecting GENERATE or THEN or USE.
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Illegal target for signal assignment.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Target type std.STANDARD.INTEGER in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_config.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Target of signal assignment is not a signal.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(209): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 3 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Illegal target for signal assignment.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Target type std.STANDARD.INTEGER in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_config.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(160): Target of signal assignment is not a signal.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(209): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 3 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(149): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(166): Illegal target for signal assignment.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(166): Target type std.STANDARD.INTEGER in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_config.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(166): Target of signal assignment is not a signal.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(215): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 4 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(150): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(208): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(150): Target type work.seven_segment_pkg.seven_segment_config in signal assignment is different from expression type work.seven_segment_pkg.seven_segment_digit_array.
+# ** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(208): VHDL Compiler exiting
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 1 error.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(42): near "function": (vcom-1576) expecting ';'.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Target type (error) in variable assignment is different from expression type.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Enumeration literal '0' is not of type std.STANDARD.BOOLEAN.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1076) OTHERS choice cannot be used in unconstrained array aggregate.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(48): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(48): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(49): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(49): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(51): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(52): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(52): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(54): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(55): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(55): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(57): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(58): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(58): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(60): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(61): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(61): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(63): RETURN statement must be inside of a subprogram.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(64): near "function": (vcom-1576) expecting ';'.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 25 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(42): near "function": (vcom-1576) expecting ';'.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Target type (error) in variable assignment is different from expression type.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): Enumeration literal '0' is not of type std.STANDARD.BOOLEAN.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(47): (vcom-1076) OTHERS choice cannot be used in unconstrained array aggregate.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(48): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(48): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(49): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(49): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(51): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(52): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(52): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(54): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(55): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(55): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(57): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(58): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(58): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(60): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(61): (vcom-1136) Unknown identifier "ret".
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(61): Illegal concurrent statement.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(63): RETURN statement must be inside of a subprogram.
+# ** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd(64): near "function": (vcom-1576) expecting ';'.
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 1 failed with 25 errors.
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package seven_segment_pkg
+# -- Compiling entity seven_segment_agent
+# -- Compiling architecture logic of seven_segment_agent
+# 
+# 
+# vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package seven_segment_pkg
+# -- Compiling package body seven_segment_pkg
+# -- Loading package seven_segment_pkg
+# 
+# 
+# 2 compiles, 0 failed with no errors.

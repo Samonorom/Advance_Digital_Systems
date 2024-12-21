@@ -1,0 +1,10 @@
+v 4
+file . "seven_segment_agent.vhd" "d0ad4c119d1b3327071aacc0e5b4f6d2f0c3b9d5" "20241219040422.395":
+  entity seven_segment_agent at 1( 0) + 0 on 47;
+  architecture logic of seven_segment_agent at 28( 880) + 0 on 48;
+file . "seven_segment_pkg.vhd" "2718788dd76f15d1559252a72a0a87090dfd52d7" "20241219040420.773":
+  package seven_segment_pkg at 1( 0) + 0 on 45 body;
+  package body seven_segment_pkg at 57( 2620) + 0 on 46;
+file . "top_level.vhd" "6f2f4580d8730da8929517880d373da86e50e494" "20241219040424.434":
+  entity top_level at 1( 0) + 0 on 49;
+  architecture rtl of top_level at 18( 557) + 0 on 50;

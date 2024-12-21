@@ -1,0 +1,12 @@
+entity top is
+	port (A	: in  bit;
+	      F	: out bit);
+end entity;
+
+architecture top_arch of top is
+
+     begin
+
+	  F <= not A;
+
+end architecture;

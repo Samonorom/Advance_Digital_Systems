@@ -1,0 +1,79 @@
+C:/Users/samon/Desktop/Project4/soc_toplevel.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/soc_toplevel.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity soc_toplevel
+-- Compiling architecture rtl of soc_toplevel
+
+} {} {}} C:/Users/samon/Desktop/Project4/seven_segment_pkg_v2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg_v2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package seven_segment_pkg
+-- Compiling package body seven_segment_pkg
+-- Loading package seven_segment_pkg
+
+} {} {}} C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package seven_segment_pkg
+-- Compiling entity seven_segment_agent
+-- Compiling architecture logic of seven_segment_agent
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(104): (vcom-1600) No feasible entries for subprogram "lamps_off".
+   Visible subprograms are:
+      (explicit) seven_segment_pkg.lamps_off[work.seven_segment_pkg.lamp_configuration return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(47)
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(106): near "signal": (vcom-1576) expecting ')'.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(124): Illegal target for signal assignment.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(124): (vcom-1136) Unknown identifier "data_to_driver".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(125): Illegal target for signal assignment.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(125): (vcom-1136) Unknown identifier "data_to_driver".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(127): Illegal target for signal assignment.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(127): (vcom-1136) Unknown identifier "data_to_driver".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(132): (vcom-1136) Unknown identifier "outputs_off".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(139): (vcom-1136) Unknown identifier "data_to_driver".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(139): Expression is not a signal.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(147): (vcom-1600) No feasible entries for subprogram "lamps_negative".
+   Visible subprograms are:
+      (explicit) seven_segment_pkg.lamps_negative[work.seven_segment_pkg.lamp_configuration return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(51)
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(148): near "have_seen_only_zeros": (vcom-1576) expecting ';'.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(154): (vcom-1600) No feasible entries for subprogram "lamps_off".
+   Visible subprograms are:
+      (explicit) seven_segment_pkg.lamps_off[work.seven_segment_pkg.lamp_configuration return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(47)
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(155): near "have_seen_only_zeros": (vcom-1576) expecting ';'.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(162): (vcom-1136) Unknown identifier "data_to_driver".
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(162): (vcom-1590) Bad expression in right operand of infix expression 'and'.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(162): Type error resolving infix expression "and" as type std.STANDARD.BOOLEAN.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(164): (vcom-1600) No feasible entries for subprogram "lamps_off".
+   Visible subprograms are:
+      (explicit) seven_segment_pkg.lamps_off[work.seven_segment_pkg.lamp_configuration return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(47)
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(165): near "have_seen_only_zeros": (vcom-1576) expecting ';'.
+** Error: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(170): (vcom-1600) No feasible entries for subprogram "get_hex_digit".
+   Visible subprograms are:
+      (explicit) seven_segment_pkg.get_hex_digit[work.seven_segment_pkg.hex_digit, work.seven_segment_pkg.lamp_configuration return work.seven_segment_pkg.seven_segment_config] at C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd(42)
+** Note: C:/Users/samon/Desktop/Project4/seven_segment_agent_v2.vhd(216): VHDL Compiler exiting
+
+} {10.0 11.0 13.0 24.0 26.0 28.0 30.0 35.0 37.0 39.0} {}} C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package seven_segment_pkg
+-- Compiling package body seven_segment_pkg
+-- Loading package seven_segment_pkg
+
+} {} {}} C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/samon/Desktop/Project4/seven_segment_agent.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package seven_segment_pkg
+-- Compiling entity seven_segment_agent
+-- Compiling architecture logic of seven_segment_agent
+
+} {} {}}
